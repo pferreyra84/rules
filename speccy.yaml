@@ -1,0 +1,8 @@
+rules:
+- name: paths-kebab-case
+  object: pathItem
+  disabled: false
+  description: All YAML/JSON paths MUST follow kebab-case
+  pattern:
+    property: "$key"
+    value: "^\/([a-z0-9]+(-[a-z0-9]+)*)?(\/[a-z0-9]+(-[a-z0-9]+)*|\/{.+})*$"
